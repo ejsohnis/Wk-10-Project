@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Table</title>
+
+    <!--In this project I used HTML, Bootstrap and JavaScript
+    to create a single website page, and it contained a table and that's styled
+by a bootstrap, and a bootstrap styled form that a user can add a new row to the
+table, when clicking on submit.
+
+this is the link that connect this document to bootstrap-->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+
+
+</head>
+
+<body class="container"><br>
+    <h2>Table of Employees</h2>
+
+    <!-- this is the table created -->
+
+    <table class="table table-bordered" id="list">
+
+        <thead>
+            <!-- this is the heading of the table -->
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Position</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            <!-- this is the table data -->
+            <tr>
+
+                <td scope="row">Albert</td>
+                <td>Lidor</td>
+                <td>Al@gmail.com</td>
+                <td>General Manager</td>
+
+            </tr>
+
+            <tr>
+                <td>Simona</td>
+                <td>Gret</td>
+                <td>Sgr@gmail.com</td>
+                <td>Electrical ngineer</td>
+
+            </tr>
+
+            <tr>
+                <td>Jesica</td>
+                <td>Klark</td>
+                <td>JK@gmail.com</td>
+                <td>Software Engineer</td>
+
+
+            </tr>
+
+
+            <tr>
+                <td>Jack</td>
+                <td>Miller</td>
+                <td>JM@gmail.com</td>
+                <td>AI Researcher</td>
+
+            </tr>
+
+
+
+
+            <tr>
+                <td>Larry</td>
+                <td>Colen</td>
+                <td>LC@gmail.com</td>
+                <td>Graphic Designer</td>
+
+
+            </tr>
+
+        </tbody>
+
+    </table>
+
+    <!-- this is the bootstrap styled form that allows a user to add a new row
+either with filled information or empty row to the table when clicking on submit button-->
+
+
+    <h2>Add New Information</h2>
+
+    <form>
+
+        <div class="form-group">
+
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="First-Name">First Name</label>
+
+                        <input type="text" class="form-control" id="First-Name">
+
+                        <!-- here we can remove a new information that we added to the table -->
+                        <button id="remove">Remove Text from DOM</button>
+                        <!-- here we can reset the form so it can leave an empty row 
+                            to fill in a new information -->
+                        <input type="reset" value="Reset">
+
+                    </div>
+                </div>
+
+
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="Last-Name">Last Name</label>
+
+                        <input type="text" class="form-control" id="Last-Name">
+                    </div>
+                </div>
+
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="Email">Email</label>
+
+                        <input type="text" class="form-control" id="Email">
+                    </div>
+                </div>
+
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="Email">Position</label>
+
+                        <input type="text" class="form-control" id="Position">
+                    </div>
+                </div>
+
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="First-Date">First Date</label>
+
+                        <!-- here I added a calender to show when workers goes on vacation
+                        and when they are comiing back from vacation -->
+
+                        <input type="Date" class="form-control" id="First-Date">
+                    </div>
+                </div>
+
+
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="End-Date">End Date</label>
+
+                        <input type="Date" class="form-control" id="End-Date">
+                    </div>
+                </div>
+
+
+            </div>
+
+
+    </form>
+
+
+    </div>
+    </div>
+
+
+
+    <button id="new-btn" class="btn btn-primary form-control">submit</button>
+
+    </div>
+
+
+
+    <!-- I linked this code to JavaScript -->
+
+    <script src="script.js"></script>
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+</body>
+
+</html>
